@@ -59,7 +59,12 @@ class _SplashBodyState extends State<SplashBody>
   navigetToHomeView() {
     Future.delayed(
       const Duration(seconds: 3),
-      () => const HomeView(),
+      () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const HomeView(),
+        ),
+      ),
     );
   }
 }
