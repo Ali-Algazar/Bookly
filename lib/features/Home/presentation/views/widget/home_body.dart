@@ -1,3 +1,4 @@
+import 'package:bookly/features/Home/presentation/views/widget/Slider_ListView.dart';
 import 'package:bookly/features/Home/presentation/views/widget/custom_home_appber.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class HomeBody extends StatelessWidget {
     return const Column(
       children: [
         CustomHomeAppBer(),
+        SliderListView(),
       ],
     );
   }

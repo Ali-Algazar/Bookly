@@ -10,7 +10,7 @@ class CustomHomeAppBer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: 30,
-        vertical: 40,
+        vertical: 30,
       ),
       child: Row(
         children: [
