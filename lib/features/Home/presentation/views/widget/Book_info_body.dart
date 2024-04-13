@@ -1,3 +1,4 @@
+import 'package:bookly/features/Home/presentation/views/widget/Book_Info_appBer.dart';
 import 'package:flutter/material.dart';
 
 class BookInfoBody extends StatelessWidget {
@@ -5,6 +6,12 @@ class BookInfoBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const SafeArea(
+      child: Column(
+        children: [
+          CustomBookInfoAppBer(),
+        ],
+      ),
+    );
   }
 }
