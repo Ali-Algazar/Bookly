@@ -1,7 +1,10 @@
+import 'package:bookly/constants.dart';
 import 'package:bookly/core/utlis/styles.dart';
+import 'package:bookly/features/Home/presentation/views/widget/Best_Seller_Book_Item.dart';
 import 'package:bookly/features/Home/presentation/views/widget/Slider_ListView.dart';
 import 'package:bookly/features/Home/presentation/views/widget/custom_home_appber.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -22,7 +25,11 @@ class HomeBody extends StatelessWidget {
             'Best Seller',
             style: FontStyles.fontStyles18,
           ),
-        )
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        const BestSellerBookItem(),
       ],
     );
   }
