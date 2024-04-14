@@ -2,6 +2,7 @@ import 'package:bookly/constants.dart';
 import 'package:bookly/core/utlis/styles.dart';
 import 'package:bookly/features/Home/presentation/views/widget/BookCaverImage.dart';
 import 'package:bookly/features/Home/presentation/views/widget/Book_Info_appBer.dart';
+import 'package:bookly/features/Home/presentation/views/widget/Rating.dart';
 import 'package:flutter/material.dart';
 
 class BookInfoBody extends StatelessWidget {
@@ -21,6 +22,20 @@ class BookInfoBody extends StatelessWidget {
             'The Jungle Book',
             style: FontStyles.fontStyles30,
           ),
+          const SizedBox(
+            height: 5,
+          ),
+          Text(
+            'Rudyard Kipling',
+            style: FontStyles.fontStyles18.copyWith(
+              fontWeight: FontWeight.w500,
+              color: Colors.white.withOpacity(0.70),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Rating(),
         ],
       ),
     );
