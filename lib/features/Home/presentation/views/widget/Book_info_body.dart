@@ -2,8 +2,11 @@ import 'package:bookly/constants.dart';
 import 'package:bookly/core/utlis/styles.dart';
 import 'package:bookly/features/Home/presentation/views/widget/BookCaverImage.dart';
 import 'package:bookly/features/Home/presentation/views/widget/Book_Info_appBer.dart';
+import 'package:bookly/features/Home/presentation/views/widget/Custom_downlode_buttom.dart';
 import 'package:bookly/features/Home/presentation/views/widget/Rating.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class BookInfoBody extends StatelessWidget {
   const BookInfoBody({super.key});
@@ -36,6 +39,10 @@ class BookInfoBody extends StatelessWidget {
             height: 10,
           ),
           const Rating(),
+          const SizedBox(
+            height: 30,
+          ),
+          const CustomDownlodeButtom(),
         ],
       ),
     );
